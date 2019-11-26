@@ -1,6 +1,6 @@
 # A Reinforcement Learning Based Multiple Strategy Framework for Tracking a Moving Target
 
-In order to combine the robustness of classical control strategies with the adaptive characteristics of reinforcement learning, this hierarchical control framework was proposed. A neural networks is in the high level (HL). It determines which classical control method to be adopted with observations. In the strategy level (SL), the strategy chosen by the control signal ($c_t$) perform the actual action. This idea is inspired from [this paper](https://arxiv.org/abs/1610.05182).
+In order to combine the robustness of classical control strategies with the adaptive characteristics of reinforcement learning, this hierarchical control framework was proposed. A neural networks is in the high level (HL). It determines which classical control method to be adopted with observations. In the strategy level (SL), the strategy chosen by the control signal ($c_t$) perform the actual action. This idea is inspired from [the hierarchical reinforcement learning](https://arxiv.org/abs/1610.05182).
 ![framework](framework.png)
 Compared to the end-to-end design, this hierarchical design has following advantages:
 - Easy to train. For the high level network, the action space is simplified into discrete, highly reduce the exploration space of the agent.
